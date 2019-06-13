@@ -23,7 +23,12 @@ public final class MainVC: UIViewController {
     public override func loadView() {
         super.loadView()
         
-        self.view = MainView()
+        let tagsVC: P11TagsVC = P11TagsVC()
+        self.add(tagsVC)
+        
+        self.view = MainView(tagsView: tagsVC.rootView)
+        
+        tagsVC.rootView.delegate = self
     }
     
     public override func viewDidLoad() {
@@ -36,5 +41,11 @@ public final class MainVC: UIViewController {
 // MARK: - Views
 extension MainVC {
     public var rootView: MainView { return self.view as! MainView }
+}
+
+extension MainVC: P11TagsViewDelegate {
+    public func update(height: CGFloat) {
+        self.rootView.updateCollectionView(height: height)
+    }
 }
 
