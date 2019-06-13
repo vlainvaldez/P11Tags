@@ -92,7 +92,7 @@ extension P11TagsVC: UICollectionViewDelegateFlowLayout {
         
         return CGSize(
             width: tagWidth + 20,
-            height: 60.0
+            height: 30.0
         )
     }
 }
