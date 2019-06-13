@@ -14,7 +14,7 @@ public final class TagCell: UICollectionViewCell {
     public let titleLabel: UILabel = {
         let view: UILabel = UILabel()
         view.font = UIFont.systemFont(
-            ofSize: 15.0,
+            ofSize: 13.0,
             weight: UIFont.Weight.bold
         )
         view.textColor = UIColor.gray

@@ -22,6 +22,7 @@
 		8144E5FC22B1DEBA003A66D3 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8144E5FB22B1DEBA003A66D3 /* Tag.swift */; };
 		8144E5FE22B1E0A1003A66D3 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8144E5FD22B1E0A1003A66D3 /* StringExtensions.swift */; };
 		8144E60122B1E80D003A66D3 /* P11TagsViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8144E60022B1E80D003A66D3 /* P11TagsViewDelegate.swift */; };
+		8144E60322B2048C003A66D3 /* FlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8144E60222B2048C003A66D3 /* FlowLayout.swift */; };
 		8F49CAD9CA526BDF49600C60 /* Pods_P11Tags.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 084DA57FEAC056F95A608812 /* Pods_P11Tags.framework */; };
 		C8DEEFB25066EB704968F911 /* Pods_P11TagsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B64C522198CA5CBA6BC6AF13 /* Pods_P11TagsUITests.framework */; };
 		DE1BE4928AF84D56D987E56C /* Pods_P11TagsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF88EDB5F4D4B75BB6E9FCBB /* Pods_P11TagsTests.framework */; };
@@ -70,6 +71,7 @@
 		8144E5FB22B1DEBA003A66D3 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 		8144E5FD22B1E0A1003A66D3 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		8144E60022B1E80D003A66D3 /* P11TagsViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P11TagsViewDelegate.swift; sourceTree = "<group>"; };
+		8144E60222B2048C003A66D3 /* FlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayout.swift; sourceTree = "<group>"; };
 		A8C2571E1C88F0CA81329B0A /* Pods-P11TagsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-P11TagsUITests.debug.xcconfig"; path = "Target Support Files/Pods-P11TagsUITests/Pods-P11TagsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A8D5F13E9EA60ECF75A37944 /* Pods-P11TagsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-P11TagsTests.release.xcconfig"; path = "Target Support Files/Pods-P11TagsTests/Pods-P11TagsTests.release.xcconfig"; sourceTree = "<group>"; };
 		B64C522198CA5CBA6BC6AF13 /* Pods_P11TagsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_P11TagsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -202,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				8144E5ED22B1D202003A66D3 /* Extensions */,
+				8144E60222B2048C003A66D3 /* FlowLayout.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -483,6 +486,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8144E60122B1E80D003A66D3 /* P11TagsViewDelegate.swift in Sources */,
+				8144E60322B2048C003A66D3 /* FlowLayout.swift in Sources */,
 				8144E5F422B1D3EA003A66D3 /* P11TagsView.swift in Sources */,
 				8144E5BC22B1CA80003A66D3 /* MainVC.swift in Sources */,
 				8144E5FE22B1E0A1003A66D3 /* StringExtensions.swift in Sources */,

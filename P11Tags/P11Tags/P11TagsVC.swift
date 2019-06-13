@@ -45,6 +45,12 @@ public final class P11TagsVC: UIViewController {
             Tag(name: "aviation"), Tag(name: "heavy equipments"),
             Tag(name: "agriculture"), Tag(name: "education"),
             Tag(name: "aviation"), Tag(name: "motors"),
+            Tag(name: "motors"),Tag(name: "textile"), Tag(name: "manufacturing"),
+            Tag(name: "software"), Tag(name: "human resources"),
+            Tag(name: "heavy equipments"), Tag(name: "agriculture"),
+            Tag(name: "aviation"), Tag(name: "heavy equipments"),
+            Tag(name: "agriculture"), Tag(name: "education"),
+            Tag(name: "aviation"), Tag(name: "motors"),
             Tag(name: "motors")
         ]
     }
@@ -87,12 +93,11 @@ extension P11TagsVC: UICollectionViewDelegateFlowLayout {
         
         let tagWidth: CGFloat = tagName.width(
             withConstrainedHeight: 60.0,
-            font: UIFont.systemFont(ofSize: 15.0, weight: UIFont.Weight.regular)
+            font: UIFont.systemFont(ofSize: 13.0, weight: UIFont.Weight.regular)
         )
         
-        return CGSize(
-            width: tagWidth + 20,
-            height: 30.0
+        return self.rootView.collectionView.systemLayoutSizeFitting(
+            CGSize(width: tagWidth + 20, height: 30.0)
         )
     }
 }

@@ -16,7 +16,7 @@ public class P11TagsView: UIView {
     
     // MARK: - Subviews
     public let collectionView: UICollectionView = {
-        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        let layout: TagFlowLayout = TagFlowLayout()
         layout.scrollDirection = UICollectionView.ScrollDirection.vertical
         layout.minimumLineSpacing = 5.0
         layout.minimumInteritemSpacing = 5.0
@@ -25,6 +25,8 @@ public class P11TagsView: UIView {
             collectionViewLayout: layout
         )
         view.backgroundColor = UIColor.clear
+        view.clipsToBounds = true
+        view.contentMode = .scaleAspectFit
         view.showsHorizontalScrollIndicator = false
         view.isPagingEnabled = false
         view.isScrollEnabled = true
@@ -57,6 +59,10 @@ public class P11TagsView: UIView {
         guard let delegate = self.delegate else { return }
         
         delegate.update(height: collectionViewHeight + 20)
+        
+        
+        self.collectionView.contentMode = .scaleToFill
+        self.layoutIfNeeded()
         
     }
     
